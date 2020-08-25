@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SlimeBasedReverseRewrite:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7386a2a0-271d-41e2-af6c-479b02581f46" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1gawPQjmZhDuKnHMJyQxj1rGspO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/SlimeBasedReverseRewrite_jar/SlimeBasedReverseRewrite.jar" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\11. Minecraft plugins server\SlimeBasedReverseRewrite\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.JARSE">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="nl.sheephead.Main" />
+      <module name="SlimeBasedReverseRewrite" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JARSE" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/SlimeBasedReverseRewrite_jar/SlimeBasedReverseRewrite.jar" />
+      <option name="WORKING_DIRECTORY" value="E:\11. Minecraft plugins server\SlimeBasedReverseRewrite" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SlimeBasedReverseRewrite:jar" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.JARSE" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7386a2a0-271d-41e2-af6c-479b02581f46" name="Default Changelist" comment="" />
+      <created>1598365986911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598365986911</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="620" y="315" key="#BuildArtifactsBeforeRunChooser" timestamp="1598367523723">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="620" y="315" key="#BuildArtifactsBeforeRunChooser/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367523723" />
+    <state x="294" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598367659044">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="294" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367659044" />
+    <state x="570" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598367426354">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="570" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367426354" />
+    <state x="620" y="265" key="FileChooserDialogImpl" timestamp="1598367517792">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="620" y="265" key="FileChooserDialogImpl/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367517792" />
+    <state width="1637" height="340" key="GridCell.Tab.0.bottom" timestamp="1598385683643">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.0.bottom/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598385683643" />
+    <state width="1637" height="340" key="GridCell.Tab.0.center" timestamp="1598385683643">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.0.center/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598385683643" />
+    <state width="1637" height="340" key="GridCell.Tab.0.left" timestamp="1598385683643">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.0.left/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598385683643" />
+    <state width="1637" height="340" key="GridCell.Tab.0.right" timestamp="1598385683643">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.0.right/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598385683643" />
+    <state x="320" y="84" key="SettingsEditor" timestamp="1598367463032">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="320" y="84" key="SettingsEditor/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367463032" />
+  </component>
+</project>
