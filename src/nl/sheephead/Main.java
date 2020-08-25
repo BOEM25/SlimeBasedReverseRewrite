@@ -1,5 +1,6 @@
 package nl.sheephead;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.io.IOException;
@@ -14,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        JSONObject obj = new JSONObject();
+
 
         // Some testing
         System.out.println("Hi!");
@@ -25,7 +26,14 @@ public class Main {
         });
 
         // Code
-        System.out.println(getApiResponse().body());
+        String response = getApiResponse().body();
+        // Variables from GET Request
+        JSONObject job = (JSONObject) convertJSON(response);
+        Long seedMax = (Long) job.get("seedMax");
+        Long seedMin = (Long) job.get("seedMin");
+        Long set = (Long) job.get("set");
+        JSONArray x = (JSONArray) job.get("x");
+        JSONArray z = (JSONArray) job.get("z");
     }
 
     // Checks the chunk
@@ -64,7 +72,7 @@ public class Main {
     }
 
     // Get JSON
-    private static JSONObject getState(){
+    private static JSONObject convertJSON(String e){
 
         return null;
     }
