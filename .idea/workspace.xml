@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7386a2a0-271d-41e2-af6c-479b02581f46" name="Default Changelist" comment="" />
+    <list default="true" id="7386a2a0-271d-41e2-af6c-479b02581f46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SlimeBasedReverseRewrite_jar/SlimeBasedReverseRewrite.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SlimeBasedReverseRewrite_jar/SlimeBasedReverseRewrite.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SlimeBasedReverseRewrite/nl/sheephead/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SlimeBasedReverseRewrite/nl/sheephead/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nl/sheephead/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/sheephead/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +24,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/SlimeBasedReverseRewrite_jar/SlimeBasedReverseRewrite.jar" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -47,7 +56,7 @@
     </configuration>
     <configuration name="JARSE" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/SlimeBasedReverseRewrite_jar/SlimeBasedReverseRewrite.jar" />
-      <option name="WORKING_DIRECTORY" value="E:\11. Minecraft plugins server\SlimeBasedReverseRewrite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
@@ -65,6 +74,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,34 +93,52 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="315" key="#BuildArtifactsBeforeRunChooser/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367523723" />
-    <state x="294" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598367659044">
-      <screen x="0" y="0" width="1680" height="1020" />
+    <state x="2016" y="175" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598530634960">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="294" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367659044" />
+    <state x="2016" y="175" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598530634960" />
+    <state x="2448" y="247" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1598634370869">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2448" y="247" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598634370869" />
     <state x="570" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598367426354">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="570" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367426354" />
-    <state x="620" y="265" key="FileChooserDialogImpl" timestamp="1598367517792">
-      <screen x="0" y="0" width="1680" height="1020" />
+    <state x="2373" y="289" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1598632468753">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2373" y="289" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598632468753" />
+    <state x="1915" y="226" width="424" height="491" key="FileChooserDialogImpl" timestamp="1598530632945">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="265" key="FileChooserDialogImpl/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367517792" />
-    <state width="1637" height="340" key="GridCell.Tab.0.bottom" timestamp="1598386065015">
-      <screen x="0" y="0" width="1680" height="1020" />
+    <state x="1915" y="226" width="424" height="491" key="FileChooserDialogImpl/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598530632945" />
+    <state width="1874" height="284" key="GridCell.Tab.0.bottom" timestamp="1598650320499">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1637" height="340" key="GridCell.Tab.0.bottom/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598386065015" />
-    <state width="1637" height="340" key="GridCell.Tab.0.center" timestamp="1598386065015">
-      <screen x="0" y="0" width="1680" height="1020" />
+    <state width="1874" height="284" key="GridCell.Tab.0.bottom/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598650320499" />
+    <state width="1874" height="284" key="GridCell.Tab.0.bottom/72.194.1608.1023/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598474392586" />
+    <state width="1874" height="284" key="GridCell.Tab.0.center" timestamp="1598650320499">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1637" height="340" key="GridCell.Tab.0.center/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598386065015" />
-    <state width="1637" height="340" key="GridCell.Tab.0.left" timestamp="1598386065015">
-      <screen x="0" y="0" width="1680" height="1020" />
+    <state width="1874" height="284" key="GridCell.Tab.0.center/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598650320499" />
+    <state width="1874" height="284" key="GridCell.Tab.0.center/72.194.1608.1023/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598474392586" />
+    <state width="1874" height="284" key="GridCell.Tab.0.left" timestamp="1598650320499">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1637" height="340" key="GridCell.Tab.0.left/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598386065014" />
-    <state width="1637" height="340" key="GridCell.Tab.0.right" timestamp="1598386065015">
-      <screen x="0" y="0" width="1680" height="1020" />
+    <state width="1874" height="284" key="GridCell.Tab.0.left/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598650320499" />
+    <state width="1874" height="284" key="GridCell.Tab.0.left/72.194.1608.1023/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598474392586" />
+    <state width="1874" height="284" key="GridCell.Tab.0.right" timestamp="1598650320499">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1637" height="340" key="GridCell.Tab.0.right/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598386065015" />
+    <state width="1874" height="284" key="GridCell.Tab.0.right/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598650320499" />
+    <state width="1874" height="284" key="GridCell.Tab.0.right/72.194.1608.1023/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598474392586" />
     <state width="1637" height="340" key="GridCell.Tab.1.bottom" timestamp="1598386065015">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -131,5 +159,23 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="320" y="84" key="SettingsEditor/-1680.133.1680.1020/0.0.1680.1020/1680.145.1600.870@0.0.1680.1020" timestamp="1598367463032" />
+    <state x="2312" y="433" width="646" height="220" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1598536810605">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2312" y="433" width="646" height="220" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598536810605" />
+    <state x="2148" y="259" width="974" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598633439984">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2148" y="259" width="974" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/72.192.1608.1025/1680.0.1920.1080@1680.0.1920.1080" timestamp="1598633439984" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
