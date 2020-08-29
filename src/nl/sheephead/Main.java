@@ -15,11 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 public class Main {
+    public static Long set = 1L;
+    public static String url = "http://127.0.0.1:5000";
 
     public static void main(String[] args) {
 	// write your code here
@@ -27,35 +28,42 @@ public class Main {
         IntStream.range(0, 5).parallel().forEach(i -> {
             System.out.println(isSlimeChunk(6376913898547617582L, 3, i+2));
         });
-
-        List<Integer> ints = new ArrayList<Integer>();
-        ints.add(12);
-        System.out.println(ints);
-        ints.add(9);
-        System.out.println(ints);
-        ints.add(12);
-        System.out.println(ints);
-
-        // Some testing
-        System.out.println("Hi!");
-        System.out.println(Test(add(1, 3)));
-
         boolean x = true;
         List<Long> workingsSeeds = new ArrayList<Long>();
 
         while(x == true){
             List<Long> temp = run();
             System.out.println(temp);
+
+            while (true){
+                HttpResponse<String> reponse = POSTDone();
+                if (reponse == null){
+                    reponse = POSTDone();
+                } else {
+                    break;
+                }
+            }
+
             if (temp == null){
                 System.out.println("All seeds have been processed");
                 System.out.println("All working seeds: " + workingsSeeds);
                 System.out.println("awaiting new batch");
                 break;
             }
+
             if(temp.size() > 0){
                 System.out.println(temp.get(0));
+                while (true){
+                    HttpResponse<String> reponse = POSTSeeds(temp, Main.set);;
+                    if (reponse == null){
+                        reponse = POSTSeeds(temp, Main.set);
+                    } else {
+                        break;
+                    }
+                }
+
                 if(temp.get(0) == 0124L){
-                    System.out.println("B");
+                    System.out.println("CONNECTION DID SCREW");
                 } else {
                     for(int i = 0; i < temp.size(); i++){
                         long tempp = temp.get(i);
@@ -94,7 +102,6 @@ public class Main {
 
         // Variables from GET Request
         if(response == null){
-            System.out.println("test");
             return null;
         }
         JSONObject job = new JSONObject();
@@ -115,6 +122,7 @@ public class Main {
             seedMax = (Long) job.get("seedMax");
             seedMin = (Long) job.get("seedMin");
             set = (Long) job.get("set");
+            Main.set = set;
             x = (JSONArray) job.get("x");
             z = (JSONArray) job.get("z");
         } else {
@@ -132,7 +140,16 @@ public class Main {
             speed[0]++;
             boolean c = parseSeed(i, finalX, finalZ);
             if (c){
-                System.out.println("Speed: " + speed[0]/((System.nanoTime()-startTime)/1000000000) + " seeds a second");
+                Long speeddd = 1L;
+                try{
+                    speeddd = speed[0]/((System.nanoTime()-startTime)/1000000000L);
+                } catch (ArithmeticException e){
+                    speeddd = 100000000000000000L;
+                } catch (Exception e) {
+                    speeddd = 1L;
+                }
+
+                System.out.println("Speed: " + speeddd + " seeds a second");
                 System.out.println(i + " <- this seed checks all the boxes");
                 workingSeeds.add(i);
             }
@@ -181,7 +198,7 @@ public class Main {
     private static HttpResponse<String> getApiResponse(){
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = (HttpRequest) HttpRequest.newBuilder()
-                .uri(URI.create("http://127.0.0.1:5000/state"))
+                .uri(URI.create(Main.url + "/state"))
                 .build();
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -195,13 +212,75 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ConnectException e){
-            System.out.println("Connection Error, retrying in 5 seconds");
+            System.out.println("Connection Error, getApiResponse, retrying in 5 seconds");
             try {
                 TimeUnit.SECONDS.sleep(5);
             } catch (InterruptedException interruptedException) {
                 interruptedException.printStackTrace();
             }
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private static HttpResponse<String> POSTSeeds(List<Long> seeds, Long set){
+        JSONObject jobj = new JSONObject();
+        jobj.put("seeds", seeds);
+        jobj.put("set", set);
+        String json = jobj.toJSONString();
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(Main.url + "/seeds"))
+                .POST(HttpRequest.BodyPublishers.ofString(json))
+                .build();
+
+
+        try {
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            return response;
+        } catch (ConnectException e){
+            System.out.println("Connection Error, POSTSeeds, retrying in 5 seconds");
+            try {
+                TimeUnit.SECONDS.sleep(5);
+                return null;
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private static HttpResponse<String> POSTDone (){
+        JSONObject jobj = new JSONObject();
+        jobj.put("state", true);
+        jobj.put("set", set);
+        String json = jobj.toJSONString();
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(Main.url + "/done"))
+                .POST(HttpRequest.BodyPublishers.ofString(json))
+                .build();
+
+
+        try {
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            return response;
+        } catch (ConnectException e){
+            System.out.println("Connection Error, POSTDone, retrying in 5 seconds");
+            try {
+                TimeUnit.SECONDS.sleep(5);
+                return null;
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
+            }
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
         return null;
