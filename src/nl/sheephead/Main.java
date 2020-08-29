@@ -20,7 +20,7 @@ import java.util.stream.LongStream;
 
 public class Main {
     public static Long set = 1L;
-    public static String url = "http://127.0.0.1:5000";
+    public static String url = "http://pim.sheephead.nl:5000";
 
     public static void main(String[] args) {
 	// write your code here
